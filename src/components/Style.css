@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+
+.home {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px auto;
+  justify-content: space-around;
+  max-width: 1100px;
+}
+
+.products {
+  width: 40%;
+  margin: 20px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 0 5px;
+}
+
+.cart-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.cart-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.total-container {
+  background-color: #343a40;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  margin: 10px;
+  height: 20vh;
+}
+
+.total-container > span {
+  margin-bottom: 0.3rem;
+}
+
+.cart {
+  display: flex;
+  width: 100%;
+}
+
+.cart-container {
+  flex: 1;
+}
+.video-container {
+  max-width: 1000px;
+}
+
+.checkout-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  margin-top: 1rem;
+}
+
+.tab-container {
+  max-width: 1000px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner-tab-container {
+  width: 400px;
+}
+
+.card {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+}
+
+.card-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-details > input {
+  width: 300px;
+  margin-bottom: 1rem;
+  padding: 5px;
+}
