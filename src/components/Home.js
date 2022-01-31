@@ -1,6 +1,7 @@
 import React from "react";
 import { CartState } from "../context/Context";
 import CardComponent from "./CardComponent";
+import Footer from "./Footer";
 import Header from "./Header";
 import Hero from "./Hero";
 import "./Style.css";
@@ -16,6 +17,7 @@ const Home = () => {
           return <CardComponent product={product} key={product.id} />;
         })}
       </div>
+      <Footer />
     </>
   );
 };

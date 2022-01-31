@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Button, Card } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { CartState } from "../context/Context";
 import Header from "./Header";
 
@@ -76,6 +76,9 @@ const Checkout = () => {
           </Card>
           <Card>
             <Card.Header>3. PAYMENT METHOD</Card.Header>
+            <Card.Body>
+              <Button>Procceed to payment</Button>
+            </Card.Body>
           </Card>
         </div>
         <div style={{ width: "30%", marginLeft: "1rem" }}>
