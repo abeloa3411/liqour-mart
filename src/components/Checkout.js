@@ -7,6 +7,7 @@ import Header from "./Header";
 const Checkout = () => {
   const {
     state: { cart, user },
+    dispatch,
   } = CartState();
 
   const [total, setTotal] = useState();

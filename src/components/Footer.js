@@ -22,11 +22,21 @@ const Footer = () => {
               <div class="left_1">
                 <h2>Usefull Links</h2>
                 <div class="footer-links">
-                  <a href="#">About Us</a>
-                  <a href="#">Gift Voucher</a>
-                  <a href="#">Loyalty Program</a>
-                  <a href="#">Careers</a>
-                  <a href="#">Blog</a>
+                  <a href="https://www.freecodecamp.org/news/react-fundamentals-for-beginners/">
+                    About Us
+                  </a>
+                  <a href="https://www.freecodecamp.org/news/react-fundamentals-for-beginners/">
+                    Gift Voucher
+                  </a>
+                  <a href="https://www.freecodecamp.org/news/react-fundamentals-for-beginners/">
+                    Loyalty Program
+                  </a>
+                  <a href="https://www.freecodecamp.org/news/react-fundamentals-for-beginners/">
+                    Careers
+                  </a>
+                  <a href="https://www.freecodecamp.org/news/react-fundamentals-for-beginners/">
+                    Blog
+                  </a>
                 </div>
               </div>
               <div class="left_2">
