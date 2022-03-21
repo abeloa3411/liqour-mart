@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <>
       <div style={{ width: "100%" }}>
-        <video muted loop autoPlay>
+        <video style={{ width: "100%" }} muted loop autoPlay>
           <source src={video} type="video/mp4" />
         </video>
       </div>
