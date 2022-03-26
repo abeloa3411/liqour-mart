@@ -23,7 +23,24 @@ const Login = () => {
       <div className="tab-container">
         <div className="inner-tab-container">
           <Card>
-            <h4>Sign in to your account</h4>
+            <header
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <h3
+                style={{
+                  fontFamily: "Dancing Script",
+                }}
+              >
+                LIQOUR MART
+              </h3>
+
+              <h4>Sign in to your account</h4>
+            </header>
             <form>
               <div className="card-details">
                 <label htmlFor="email">

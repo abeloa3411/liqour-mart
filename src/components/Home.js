@@ -1,22 +1,25 @@
-import React from "react";
-import { CartState } from "../context/Context";
-import CardComponent from "./CardComponent";
+import React, { useState } from "react";
 import Footer from "./Footer";
 import Header from "./Header";
 import Hero from "./Hero";
+import ProductComponent from "./ProductComponent";
+import Search from "./Search";
 import "./Style.css";
 
 const Home = () => {
-  const { state } = CartState();
+  const [search, setSearch] = useState("");
+
   return (
     <>
       <Header />
       <Hero />
-      <div className="home">
-        {state.products.map((product) => {
-          return <CardComponent product={product} key={product.id} />;
-        })}
-      </div>
+      <Search
+        type={"text"}
+        value={search}
+        onChange={(e) => setSearch(e.target.value)}
+        placeholder={"search for liqour"}
+      />
+      <ProductComponent search={search} />
       <Footer />
     </>
   );

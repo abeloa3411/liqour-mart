@@ -7,11 +7,36 @@
 }
 
 .home {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 20px auto;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   max-width: 1100px;
+  margin: auto;
+}
+
+.hero-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, 40%);
+}
+
+.hero-heading > span > h2 {
+  font-family: "Dancing Script", sans-serif;
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+}
+
+.second-span > h2 > span {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.second-span > h2 > span:hover {
+  color: #343a40;
 }
 
 .products {
@@ -81,6 +106,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background: linear-gradient(#ef65, #98e5);
 }
 
 .inner-tab-container {
@@ -143,4 +169,38 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+}
+
+.search {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.search > input {
+  width: 500px;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 768px) {
+  .home {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer-links-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .home,
+  .left,
+  .right {
+    grid-template-columns: 1fr;
+  }
 }

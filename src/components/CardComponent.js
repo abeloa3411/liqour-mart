@@ -8,8 +8,6 @@ const CardComponent = ({ product }) => {
     dispatch,
   } = CartState();
 
-  console.log(cart);
-
   return (
     <>
       <div className="products">

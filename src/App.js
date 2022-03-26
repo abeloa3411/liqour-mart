@@ -11,7 +11,6 @@ import { CartState } from "./context/Context";
 
 function App() {
   const { state, dispatch } = CartState();
-  console.log(state);
   useEffect(() => {
     auth.onAuthStateChanged((authUser) => {
       if (authUser) {

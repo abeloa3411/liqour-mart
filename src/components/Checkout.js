@@ -107,7 +107,7 @@ const Checkout = () => {
               <footer style={{ dispaly: "flex", flexDirection: "column" }}>
                 <div style={{ marginTop: "1rem" }}>
                   <span>
-                    <span>Subtotal</span>
+                    <span>Subtotal: </span>
                     <span>{total}</span>
                   </span>
                   <span></span>

@@ -18,10 +18,10 @@ const Footer = () => {
             <AiFillLinkedin style={{ fontSize: "3rem", marginLeft: "1rem" }} />
           </div>
           <div className="footer-links-container">
-            <div class="left">
-              <div class="left_1">
+            <div className="left">
+              <div className="left_1">
                 <h2>Usefull Links</h2>
-                <div class="footer-links">
+                <div className="footer-links">
                   <a href="https://www.freecodecamp.org/news/react-fundamentals-for-beginners/">
                     About Us
                   </a>
@@ -39,9 +39,9 @@ const Footer = () => {
                   </a>
                 </div>
               </div>
-              <div class="left_2">
+              <div className="left_2">
                 <h2>Follow us</h2>
-                <div class="footer-social">
+                <div className="footer-social">
                   <BsFacebook
                     style={{ fontSize: "1.5rem", marginLeft: "1rem" }}
                   />
@@ -57,18 +57,18 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div class="right">
-              <div class="footer-input">
+            <div className="right">
+              <div className="footer-input">
                 <h2>Subscribe</h2>
                 <p>Join our news Letter</p>
-                <input type="text" class="footer-text-input" />
-                <div class="footer-btn-container">
+                <input type="text" className="footer-text-input" />
+                <div className="footer-btn-container">
                   <Button style={{ marginTop: "1rem" }}>Subscribe</Button>
                 </div>
               </div>
-              <div class="footer-contact">
+              <div className="footer-contact">
                 <h2>Contact us</h2>
-                <div class="footer-contact-content">
+                <div className="footer-contact-content">
                   LIQOUR MART LIMITED P.O. BOX 2361-00621 VILLAGE MARKET NAIROBI
                   CELL;+254(0)705 25 25 25 EMAIL;INFO@LIQOURMART.CO.KE
                 </div>

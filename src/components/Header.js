@@ -14,6 +14,8 @@ const Header = () => {
     auth.signOut();
   };
 
+  console.log(user);
+
   return (
     <>
       <Navbar bg="dark" variant="dark" style={{ height: 80 }} sticky="top">

@@ -8,19 +8,25 @@ const Register = () => {
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
 
   const register = (e) => {
     e.preventDefault();
+
+    if (password !== confirmPassword) {
+      alert("password do not match");
+    }
     if (
       email !== "" &&
       email !== null &&
       password !== "" &&
-      password !== null
+      password !== null &&
+      password === confirmPassword
     ) {
       auth
         .createUserWithEmailAndPassword(email, password)
         .then(() => {
-          navigation({ pathname: "/signin" });
+          navigation({ pathname: "/" });
         })
         .catch((error) => alert(error.message));
     }
@@ -30,7 +36,23 @@ const Register = () => {
       <div className="tab-container">
         <div className="inner-tab-container">
           <Card>
-            <h4>Create your account</h4>
+            <header
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <h3
+                style={{
+                  fontFamily: "Dancing Script",
+                }}
+              >
+                LIQOUR MART
+              </h3>
+              <h4>Create your account</h4>
+            </header>
             <form>
               <div className="card-details">
                 <label htmlFor="email">
@@ -48,6 +70,16 @@ const Register = () => {
                   type="password"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
+                />
+                <label htmlFor="password">
+                  <strong style={{ fontSize: "14px" }}>
+                    Cornfirm Password
+                  </strong>
+                </label>
+                <input
+                  type="password"
+                  value={confirmPassword}
+                  onChange={(e) => setConfirmPassword(e.target.value)}
                 />
               </div>
               <div className="button-container">
